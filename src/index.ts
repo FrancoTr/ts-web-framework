@@ -1,8 +1,5 @@
-import axios from "axios";
+import { User } from "./models/User";
 
-/* axios.post(" http://localhost:4321/users", {
-  name: "nametest123",
-  age: 99,
-}); */
+const user = new User({ id: 1 });
 
-axios.get("http://localhost:4321/users/1");
+user.fetch();
