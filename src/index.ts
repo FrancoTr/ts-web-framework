@@ -5,3 +5,5 @@ const user = new User({ id: 1 });
 user.on("change", () => {
   console.log("test change");
 });
+
+user.trigger("change");
