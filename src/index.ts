@@ -2,6 +2,6 @@ import { User } from "./models/User";
 
 const user = new User({ id: 1 });
 
-user.set({ name: "NEW NAME", age: 24 });
-
-user.save();
+user.on("change", () => {
+  console.log("test change");
+});
