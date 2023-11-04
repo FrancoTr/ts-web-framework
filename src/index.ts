@@ -7,3 +7,4 @@ user.on("change", () => {
 });
 
 user.trigger("change");
+user.set({ name: "New name" });
