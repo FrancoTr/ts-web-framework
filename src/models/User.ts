@@ -15,8 +15,3 @@ export class User extends Model<UserProps> {
     return new User(new Attributes<UserProps>(attrs), new Eventing(), new Sync<UserProps>(rootUrl));
   }
 }
-
-const user = User.buildUser({});
-user.get("id");
-user.get("name");
-user.get("age");
